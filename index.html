@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+
+</head>
+<body>
+<!-- HEADER -->
+    <div class="header">
+        <h1>Konverter mjernih jedinica</h1>
+    </div>
+
+
+    <!-- Container -->
+<div class="Container">
+
+    <!-- Izbor Kategorije  -->
+    <form name="KategorijaForm" id="KategorijaForm">
+    <select name="kategorijaSelect" id="kategorijaSelect"  onchange="Napravi(); racunaj();  ">
+  
+    </select>
+</form>
+
+<br>
+<!-- izbor mjerne jedinice -->
+<div class="Unos">
+<form name="MjernaJed" >
+<input type="number" id="prvaV"  placeholder="vrijednost" >
+<select name="prvaM" id="prvaM" onchange="racunaj()" >
+
+</select>
+</form>
+
+
+<!-- izbor mjerne jedinice -->
+<form name="MjernaJed2" >
+    <input type="number" id="drugaV" placeholder="vrijednost">
+    <select name="drugaM" id="drugaM" onchange="racunaj()" >
+ 
+    </select>
+    </form>
+    <!-- Greska  -->
+    
+</div>
+<h2 id="poruka"></h2>
+</div>
+    <script  src="main.js"></script>
+</body>
+</html>
